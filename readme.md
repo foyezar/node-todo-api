@@ -22,3 +22,8 @@ Name     | Path                  |
 -------- | --------------------- |
 1. NEW   | dogs/:id/comments/new |
 2. CREATE| dogs/:id/comments     |
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
