@@ -7,7 +7,7 @@
 ## 7 RESTful ROUTES
 
 Name       | Path          | HTTP Verb | Purpose                                          | Mongoose Method
----------- | ------------- | --------- | ------------------------------------------------ | ---------------
+---------- | :-----------: | :-------: | ------------------------------------------------ | ---------------
    INDEX   | /dogs         | GET       | List of all dogs                                 | Dog.find()
    NEW     | /dogs/new     | GET       | Show new dog form                                | N/A
    CREATE  | /dogs         | POST      | Add new dog to DB, then redirect somewhere       | Dog.create()
@@ -18,7 +18,7 @@ Name       | Path          | HTTP Verb | Purpose                                
 
 ## Nested ROUTES
 
-Name     | Path                  |
--------- | --------------------- |
+Name     | Path                 |
+-------- | :------------------: |
 NEW     | dogs/:id/comments/new |
 CREATE  | dogs/:id/comments     |
