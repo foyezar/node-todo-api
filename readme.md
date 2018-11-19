@@ -18,7 +18,7 @@ Name       | Path          | HTTP Verb | Purpose                                
 
 ## Nested ROUTES
 
-Name     | Path
--------- | --------------
-1. NEW   | dogs/:id/comments/new
-2. CREATE| dogs/:id/comments
+Name     | Path                  |
+-------- | --------------------- |
+1. NEW   | dogs/:id/comments/new |
+2. CREATE| dogs/:id/comments     |
