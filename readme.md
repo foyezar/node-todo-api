@@ -20,8 +20,8 @@ Name       | Path          | HTTP Verb | Purpose                                
 
 Name     | Path                  |
 -------- | --------------------- |
-1. NEW   | dogs/:id/comments/new |
-2. CREATE| dogs/:id/comments     |
+NEW     | dogs/:id/comments/new |
+CREATE  | dogs/:id/comments     |
 
 Markdown | Less | Pretty
 --- | --- | ---
