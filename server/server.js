@@ -9,6 +9,8 @@ const { ObjectID } = require('mongodb'),
 
 const app = express()
 
+const port = process.env.PORT || 3000
+
 // middleware
 app.use(bodyParser.json())
 
@@ -44,6 +46,6 @@ app.get('/todos/:id', (req, res) => {
   }).catch(e => res.status(400).send())
 })
 
-app.listen(3000, () => console.log('Server has started'))
+app.listen(port, () => console.log(`Server has started on ${port}`))
 
 module.exports = { app }
