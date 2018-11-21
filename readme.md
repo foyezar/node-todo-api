@@ -22,3 +22,9 @@ Name     | Path                 |
 -------- | :------------------: |
 NEW     | dogs/:id/comments/new |
 CREATE  | dogs/:id/comments     |
+
+## Authentication
+### JWT - JSON Web Token
+### Generating Auth Token Methods:
+* User.findByToken
+* user.generateAtuhToken
