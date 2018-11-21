@@ -6,7 +6,8 @@ const _            = require('lodash'),
       { ObjectID } = require('mongodb'),
       { mongoose } = require('./db/mongoose'),
       { Todo }     = require('./models/todo'),
-      { User }     = require('./models/user')
+      { User }     = require('./models/user'),
+      { authenticate } = require('./midleware/authenticate')
 
 
 const app = express()
@@ -96,11 +97,10 @@ app.post('/users', (req, res) => {
     .then(() =>  user.generateAuthToken())
     .then(token => res.header('x-auth', token).send(user))
     .catch(e => res.status(400).send(e))
+})
 
-  // User.create(body)
-  //   .then(user =>  user.generateAuthToken())
-  //   .then(token => res.header('x-auth', token).send(user))
-  //   .catch(e => res.status(400).send(e))
+app.get('/users/me', authenticate, (req, res) => {
+  res.send(req.user)
 })
 
 app.listen(port, () => console.log(`Server has started on ${port}`))
